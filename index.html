@@ -11,6 +11,8 @@
 
 </head>
 <body> 
+	
+	
 
 	<div class="container">
 	<!-- Top box -->
@@ -20,7 +22,10 @@
 				<div class="tm-header">
 					<div class="row tm-header-inner">
 						<div class="col-md-6 col-12">
-						<img src="img/itsa_me_200px.jpg" alt="me :^)" class="tm-site-logo" border-radius= 50%/> <br>
+						<div class="image-cropper">
+							<img src="img/itsa_me_200px.jpg" alt="me :^)" class="tm-site-logo"/>
+						</div>
+						 <br>
 							<div class="tm-site-text-box">
 								<h1 class="tm-site-title">Y. Ivette Colón</h1>
 								<h8 class="tm-site-description">they/she</h8>	
@@ -37,7 +42,15 @@
 				</div>
 			</div>
 		</div>
+		.image-cropper {
+		    width: 100px;
+		    height: 100px;
+		    position: relative;
+		    overflow: hidden;
+		    border-radius: 50%;
+		}
 
+		
 		<main>
 			<header class="row tm-welcome-section">
 				<h2 class="col-12 text-center tm-section-title">Howdy!</h2>
