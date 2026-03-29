@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:clairebergey.net)",
+      "WebFetch(domain:heydonworks.com)"
+    ]
+  }
+}

@@ -4,191 +4,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Y. Ivette Colón — cognitive neuroscientist studying how minds, brains, and machines represent faces, objects, and social knowledge." />
-  <title>Y. Ivette Colón</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <meta name="description" content="Ivette Colón — cognitive scientist. faces, places, machines, minds." />
+  <title>ivette colón</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link href="css/all.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
 
-  <nav class="top-nav">
+  <nav class="broadcast-nav">
     <div class="nav-inner">
-      <a class="nav-name" href="#">ivette colón</a>
-      <ul class="nav-links">
-        <li><a href="#about">about</a></li>
-        <li><a href="#research">research</a></li>
-        <li><a href="#publications">publications</a></li>
-        <li><a href="#beyond">beyond</a></li>
+      <span class="call-sign">WIVC</span>
+      <div class="dial-display">
+        <span>FM</span>
+        <span class="dial-freq" id="dial-freq">88.3</span>
+        <span>MHz</span>
+      </div>
+      <ul class="stations">
+        <li><a href="#about"        data-freq="88.3" data-label="about">88.3</a></li>
+        <li><a href="#research"     data-freq="91.7" data-label="research">91.7</a></li>
+        <li><a href="#publications" data-freq="94.1" data-label="publications">94.1</a></li>
+        <li><a href="#beyond"       data-freq="98.6" data-label="beyond">98.6</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="container">
 
-    <!-- ===================== HERO / ABOUT ===================== -->
+    <!-- 88.3 — about -->
     <section id="about" class="hero">
-      <div class="hero-photo">
-        <img src="img/choice2edit_cropped.png" alt="Ivette Colón" />
-      </div>
-      <div class="hero-text">
-        <h1 class="hero-name">ivette colón</h1>
-        <!-- <p class="hero-pronouns">she / they</p> -->
-        <p class="hero-title">
-          PhD Candidate &mdash; University of Wisconsin&ndash;Madison
-          <br />
-          <!-- <span class="hero-subtitle">Incoming Postdoctoral Fellow &mdash; McGill University</span> -->
-        </p>
-
-        <p class="hero-bio">
-          I'm a cognitive neuroscientist interested in how minds, brains, and machines represent social and visual information. 
-        </p>
-        <p class="hero-bio">
-         I will soon complete my PhD with <a href="http://concepts.psych.wisc.edu">Dr. Timothy Rogers</a> at UW&ndash;Madison.
-        </p>
-
-        <div class="hero-links">
-          <a href="mailto:yivettecolon@gmail.com"><i class="fas fa-envelope"></i> email</a>
-          <a href="https://scholar.google.com/citations?hl=en&authuser=4&user=LSkm1kwAAAAJ"><i class="fas fa-graduation-cap"></i> scholar</a>
-          <a href="https://bsky.app/profile/ivetteco.bsky.social"><i class="fa-brands fa-bluesky"></i> @ivetteco</a>
-          <a href="https://github.com/ivettecolon"><i class="fab fa-github"></i> github</a>
+      <div class="hero-grid">
+        <div class="hero-photo">
+          <img src="img/ivette_newer.jpg" alt="Ivette Colón" />
         </div>
-
-        <div class="research-tags">
-          <span class="tag">social cognition</span>
-          <span class="tag">cognitive neuroscience</span>
-          <span class="tag">deep neural networks</span>
-          <span class="tag">face perception</span>
-          <span class="tag">conceptual representation</span>
-          <span class="tag">fMRI</span>
-          <span class="tag">triadic comparisons</span>
-          <span class="tag">AI &amp; cognition</span>
+        <div class="hero-text">
+          <h1 class="hero-name">ivette colón</h1>
+          <p class="hero-meta">
+            PhD Candidate &mdash; UW&ndash;Madison
+            <!-- Cognitive &amp; Computational Neuroscience -->
+          </p>
+          <p class="hero-bio">
+            ((((((((( cognitive neuroscientist and artist ))))))))) 
+          </p>
+          <p class="hero-bio">
+            Fixin' to complete my PhD with <a href="http://concepts.psych.wisc.edu">Dr. Tim Rogers</a> at UW!
+          </p>
+          <div class="hero-links">
+            <a href="mailto:yivettecolon@gmail.com">email</a>
+            <a href="https://scholar.google.com/citations?hl=en&authuser=4&user=LSkm1kwAAAAJ">google scholar</a>
+            <a href="https://bsky.app/profile/ivetteco.bsky.social">bluesky</a>
+            <a href="https://github.com/ivettecolon">github</a>
+          </div>
+<!--           <div class="tags">
+            <span class="tag">social cognition</span>
+            <span class="tag">face perception</span>
+            <span class="tag">cognitive neuroscience</span>
+            <span class="tag">deep neural networks</span>
+            <span class="tag">fMRI</span>
+            <span class="tag">conceptual representation</span>
+          </div> -->
         </div>
       </div>
     </section>
 
-    <!-- ===================== RESEARCH ===================== -->
+    <!-- 91.7 — research -->
     <section id="research">
-      <h2 class="section-title"><span class="mono">//</span> research</h2>
+      <div class="section-marker">
+        <span class="section-freq">91.7 MHz</span>
+        <h2 class="section-title">research</h2>
+      </div>
 
-      <p>I research how minds, brains, and machines represent visual and social concepts.</p>
+      <!-- <p style="font-size:0.9rem; margin-bottom:2rem; color:#444;">I research how minds, brains, and machines represent visual and social concepts.</p> -->
 
-      <div class="research-areas">
-        <div class="research-card">
-          <h3>Mental &amp; neural motifs</h3>
+      <div class="research-list">
+        <div class="research-item">
+          <h3>mental &amp; neural motifs</h3>
           <p>Some of my work aims to characterize shared and individual-specific patterns in how people mentally organize semantic content. My current focus is applying behaviorally-derived, idiosyncratic semantic similarity spaces to neural decoding.</p>
         </div>
-<!--         <div class="research-card">
-          <h3>AI &#8596; Cognitive Science</h3>
-          <p>I translate ideas bidirectionally between cognitive/neural theories and machine learning. Deep convolutional neural networks serve as computational testbeds for theories of face perception and social knowledge &mdash; and insights from representational geometry flow back to refine psychological theory.</p>
-        </div> -->
-        <div class="research-card">
-          <h3>Social knowledge organization</h3>
+        <div class="research-item">
+          <h3>social knowledge organization</h3>
           <p>How is social knowledge structured in mind and brain? I investigate how semantic distance organizes mental representations of social roles and identities, drawing on behavioral data, semantic dementia case studies, and cross-modal conceptual spaces.</p>
         </div>
-        <div class="research-card">
-          <h3>The nature of representations</h3>
-          <p> How do our represenations of semantic content accommodate and access the many kinds of information associated with a concept? What are the mathematical principles behind how this is accomplished in the brain (and its models)? 
+        <div class="research-item">
+          <h3>the nature of representations</h3>
+          <p>How do our representations of semantic content accommodate and access the many kinds of information associated with a concept? What are the mathematical principles behind how this is accomplished in the brain and its models?</p>
         </div>
-
       </div>
-
-<!--       <div class="currently-thinking">
-        <span class="mono prompt">Things I've been thinking_about...</span>
-        <ul>
-          <li>How can many </li>
-          <li>What are the neural and computational signatures of "knowing a face"?</li>
-          <li>Can behavioral similarity structures reveal the geometry of social cognition?</li>
-        </ul>
-      </div> -->
     </section>
 
-    <!-- ===================== PUBLICATIONS ===================== -->
+    <!-- 94.1 — publications -->
     <section id="publications">
-      <h2 class="section-title"><span class="mono">//</span> publications</h2>
-      <p class="section-note">Also on <a href="https://scholar.google.com/citations?hl=en&authuser=4&user=LSkm1kwAAAAJ">Google Scholar</a></p>
+      <div class="section-marker">
+        <span class="section-freq">94.1 MHz</span>
+        <h2 class="section-title">publications</h2>
+      </div>
 
-      <h3 class="pub-category">Journal Articles</h3>
+      <p class="pub-group-label">journal articles</p>
       <ol class="pub-list">
 
         <li class="pub-item">
           <p class="pub-title"><strong>Neural representations of faces are distributed and highly-individualized.</strong></p>
-          <p class="pub-authors"><strong>Col&oacute;n, Y. I.</strong>, Mukherjee, K., Postle, B., Rogers, T. T.</p>
-          <p class="pub-venue">In prep.</p>
+          <p class="pub-authors"><strong>Col&oacute;n, Y.&thinsp;I.</strong>, Mukherjee, K., Postle, B., Rogers, T.&thinsp;T.</p>
+          <p class="pub-venue">in prep.</p>
         </li>
 
         <li class="pub-item">
           <p class="pub-title"><strong>Uniting theory and data: the promise and challenge of creating an honest model of facial expression.</strong></p>
-          <p class="pub-authors">Wohltjen, S., <strong>Col&oacute;n, Y. I.</strong>, Zhu, Z., Miller, K., Huang, W. C., Mutlu, B., Niedenthal, P. M.</p>
-          <p class="pub-venue"><em>Cognition and Emotion</em> &middot; 2024</p>
+          <p class="pub-authors">Wohltjen, S., <strong>Col&oacute;n, Y.&thinsp;I.</strong>, Zhu, Z., Miller, K., Huang, W.&thinsp;C., Mutlu, B., Niedenthal, P.&thinsp;M.</p>
+          <p class="pub-venue"><em>Cognition and Emotion</em>, 2024</p>
         </li>
 
         <li class="pub-item">
           <p class="pub-title"><strong>Seeing through disguise: Getting to know you with a deep convolutional neural network.</strong></p>
-          <p class="pub-authors">Noyes, E., Parde, C. J., <strong>Col&oacute;n, Y. I.</strong>, Hill, M. Q., Castillo, C. D., Jenkins, R., O&rsquo;Toole, A. J.</p>
+          <p class="pub-authors">Noyes, E., Parde, C.&thinsp;J., <strong>Col&oacute;n, Y.&thinsp;I.</strong>, Hill, M.&thinsp;Q., Castillo, C.&thinsp;D., Jenkins, R., O&rsquo;Toole, A.&thinsp;J.</p>
           <p class="pub-venue"><em>Cognition</em>, 211, 104611 &middot; 2021</p>
         </li>
 
         <li class="pub-item">
           <p class="pub-title"><strong>Single unit status in deep convolutional neural network codes for face identification: sparseness redefined.</strong></p>
-          <p class="pub-authors">Parde, C. J., <strong>Col&oacute;n, Y. I.</strong>, Hill, M. Q., Castillo, C. D., Dhar, P., O&rsquo;Toole, A. J.</p>
+          <p class="pub-authors">Parde, C.&thinsp;J., <strong>Col&oacute;n, Y.&thinsp;I.</strong>, Hill, M.&thinsp;Q., Castillo, C.&thinsp;D., Dhar, P., O&rsquo;Toole, A.&thinsp;J.</p>
           <p class="pub-venue"><em>Journal of Vision</em>, 21(8), 15 &middot; 2021</p>
         </li>
 
         <li class="pub-item">
           <p class="pub-title"><strong>Facial expression is retained in deep networks trained for face identification.</strong></p>
-          <p class="pub-authors"><strong>Col&oacute;n, Y. I.</strong>, Castillo, C. D., O&rsquo;Toole, A. J.</p>
+          <p class="pub-authors"><strong>Col&oacute;n, Y.&thinsp;I.</strong>, Castillo, C.&thinsp;D., O&rsquo;Toole, A.&thinsp;J.</p>
           <p class="pub-venue"><em>Journal of Vision</em>, 21(4), 4 &middot; 2021</p>
         </li>
 
         <li class="pub-item">
           <p class="pub-title"><strong>Deep convolutional neural networks in the face of caricature.</strong></p>
-          <p class="pub-authors">Hill, M. Q., Parde, C. J., Castillo, C. D., <strong>Col&oacute;n, Y. I.</strong>, Ranjan, R., Chen, J. C., Blanz, V., O&rsquo;Toole, A. J.</p>
+          <p class="pub-authors">Hill, M.&thinsp;Q., Parde, C.&thinsp;J., Castillo, C.&thinsp;D., <strong>Col&oacute;n, Y.&thinsp;I.</strong>, Ranjan, R., Chen, J.&thinsp;C., Blanz, V., O&rsquo;Toole, A.&thinsp;J.</p>
           <p class="pub-venue"><em>Nature Machine Intelligence</em>, 1(11), 522&ndash;529 &middot; 2019</p>
         </li>
 
       </ol>
 
-      <h3 class="pub-category">Conference Papers &amp; Proceedings</h3>
+      <p class="pub-group-label">conference papers &amp; proceedings</p>
       <ol class="pub-list">
 
         <li class="pub-item">
-          <p class="pub-title"><strong>Finding motifs in mental representations of faces, places, and objects.</strong> <span class="award-badge">&#x1F3C6; Graduate Student Award</span></p>
-          <p class="pub-authors"><strong>Col&oacute;n, Y. I.</strong>, Rogers, T. T.</p>
+          <p class="pub-title"><strong>Finding motifs in mental representations of faces, places, and objects.</strong> <span class="award-mark">&#x2605; graduate student award</span></p>
+          <p class="pub-authors"><strong>Col&oacute;n, Y.&thinsp;I.</strong>, Rogers, T.&thinsp;T.</p>
           <p class="pub-venue"><em>Proceedings of the Cognitive Science Society</em> &middot; 2025</p>
         </li>
 
         <li class="pub-item">
           <p class="pub-title"><strong>Semantic distance organizes social knowledge: Insights from semantic dementia and cross-modal conceptual space.</strong></p>
-          <p class="pub-authors"><strong>Col&oacute;n, Y. I.</strong>, Rogers, T. T., Lambon Ralph, M., Rouse, M.</p>
+          <p class="pub-authors"><strong>Col&oacute;n, Y.&thinsp;I.</strong>, Rogers, T.&thinsp;T., Lambon Ralph, M., Rouse, M.</p>
           <p class="pub-venue"><em>Proceedings of the Cognitive Science Society</em> &middot; 2024</p>
         </li>
 
         <li class="pub-item">
           <p class="pub-title"><strong>Face and image representation in deep CNN features.</strong></p>
-          <p class="pub-authors">Parde, C. J., Castillo, C., Hill, M. Q., <strong>Col&oacute;n, Y. I.</strong>, Sankaranarayanan, S., Chen, J.-C., O&rsquo;Toole, A. J.</p>
-          <p class="pub-venue"><em>IEEE International Conference on Automatic Face &amp; Gesture Recognition</em> &middot; 2017</p>
+          <p class="pub-authors">Parde, C.&thinsp;J., Castillo, C., Hill, M.&thinsp;Q., <strong>Col&oacute;n, Y.&thinsp;I.</strong>, Sankaranarayanan, S., Chen, J.-C., O&rsquo;Toole, A.&thinsp;J.</p>
+          <p class="pub-venue"><em>IEEE Int. Conf. on Automatic Face &amp; Gesture Recognition</em> &middot; 2017</p>
         </li>
 
       </ol>
     </section>
 
-    <!-- ===================== BEYOND ===================== -->
+    <!-- 98.6 — beyond -->
     <section id="beyond">
-      <h2 class="section-title"><span class="mono">//</span> beyond the lab</h2>
-
-      <div class="beyond-grid">
-        <div class="beyond-card">
-          <h3>my "real work"</h3>
-          <p>I'm a multimedia artist, musician, and DIY music organizer. Actively performing as footleg, formerly in the bands Field Guide, Picnics, Combat Naps (any many more with worse names). One day I may link recordings, who knows!
-        </div>
+      <div class="section-marker">
+        <span class="section-freq">98.6 MHz</span>
+        <h2 class="section-title">beyond the lab</h2>
       </div>
 
-      <div class="beyond-grid">
-        <div class="beyond-card">
-          <h3>queery on WORT 89.9 FM</h3>
-          <p>I produce and host <em>Queery</em>, Madison, Wisconsin&rsquo;s LGBTQ+ news and information talk show on WORT 89.9 FM.</p>
+      <div class="beyond-list">
+        <div class="beyond-item">
+          <h3>my "real work"</h3>
+          <p>I&rsquo;m a multimedia artist, musician, and DIY music organizer. Actively performing as <em>footleg</em>, formerly in the bands Field Guide, Picnics, Combat Naps (and many more with worse names). One day I may link recordings — who knows!</p>
+        </div>
+        <div class="beyond-item">
+          <h3>queery &mdash; WORT 89.9 FM</h3>
+          <p>I produced and hosted <em>Queery</em>, Madison&rsquo;s LGBTQ+ news and talk show on WORT 89.9&nbsp;FM.</p>
           <a href="https://www.wortfm.org/uw-canvas-pronoun-feature-and-making-it-happen/">wortfm.org &rarr;</a>
         </div>
       </div>
@@ -196,10 +187,52 @@
 
   </main>
 
-  <footer class="site-footer">
-    <!-- <span class="mono">yivettecolon@gmail.com</span> -->
+  <footer>
     <p>Y. Ivette Col&oacute;n &middot; 2026</p>
+    <span class="signal-off">signing off</span>
   </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section[id]');
+    const dialFreq = document.getElementById('dial-freq');
+    const stationLinks = document.querySelectorAll('.stations a');
+
+    const freqMap = {
+      about: '88.3',
+      research: '91.7',
+      publications: '94.1',
+      beyond: '98.6'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          const freq = freqMap[id];
+          if (freq && dialFreq.textContent !== freq) {
+            dialFreq.classList.add('changing');
+            setTimeout(() => {
+              dialFreq.textContent = freq;
+              dialFreq.classList.remove('changing');
+            }, 120);
+          }
+          stationLinks.forEach(a => {
+            a.classList.toggle('active', a.dataset.freq === freq);
+          });
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+
+    sections.forEach(s => observer.observe(s));
+
+    // smooth scroll on station click
+    stationLinks.forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 
 </body>
 </html>
