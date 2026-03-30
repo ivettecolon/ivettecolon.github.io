@@ -25,7 +25,7 @@ html {
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 15px;
   line-height: 1.7;
 }
@@ -157,11 +157,22 @@ a:hover { text-decoration: underline; }
 }
 
 section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .right-col section + section {
-  border-top: 1px solid var(--rule);
+  border-top: none;
+}
+
+.right-col section + section::before {
+  content: ")))))))))))))))))))))))))))  ◌  (((((((((((((((((((((((((((";
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--rule);
+  text-align: center;
+  padding: 1.5rem 0 0;
+  margin-bottom: rem;
 }
 
 /* ---- SECTION HEADERS ---- */
@@ -169,8 +180,8 @@ section {
 .section-marker {
   display: flex;
   align-items: baseline;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
+  gap: rem;
+  margin-bottom: rem;
 }
 
 .section-freq {
@@ -193,8 +204,8 @@ section {
 /* ---- HERO ---- */
 
 .hero {
-  padding-top: 4.5rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .hero-grid {
@@ -282,6 +293,16 @@ section {
   text-decoration: none;
 }
 
+.hero-ascii {
+  margin-top: 1.5rem;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  line-height: 1.35;
+  color: var(--dim);
+  white-space: pre;
+  overflow-x: auto;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -325,7 +346,7 @@ section {
 }
 
 .research-item {
-  padding: 1.25rem 0;
+  padding: .3rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -338,11 +359,12 @@ section {
   font-size: 0.78rem;
   font-weight: 700;
   color: var(--ink);
-  margin-bottom: 0.5rem;
+  margin-bottom: rem;
 }
 
 .research-item p {
-  font-size: 0.88rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
   color: #444;
   line-height: 1.7;
 }
@@ -355,9 +377,9 @@ section {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: var(--dim);
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 0.75rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -371,7 +393,7 @@ section {
 }
 
 .pub-item {
-  padding: 0.9rem 0;
+  padding: .75rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -380,19 +402,22 @@ section {
 }
 
 .pub-title {
-  font-size: 0.9rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
   line-height: 1.5;
   margin-bottom: 0.3rem;
 }
 
 .pub-authors {
-  font-size: 0.8rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
   color: var(--dim);
   margin-bottom: 0.15rem;
 }
 
 .pub-venue {
-  font-size: 0.78rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
   color: var(--dim);
   font-style: italic;
 }
@@ -417,7 +442,7 @@ section {
 }
 
 .beyond-item {
-  padding: 1.5rem 0;
+  padding: .3rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -512,9 +537,6 @@ footer .signal-off::before {
     padding-left: 0;
   }
 
-  .right-col section:first-child {
-    border-top: 1px solid var(--rule);
-  }
 
   .nav-inner {
     padding: 0.6rem 1rem;
