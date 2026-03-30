@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ivette Colón — cognitive scientist. faces, places, machines, minds." />
+  <meta name="description" content="why i see - y. ivette colón — cognitive scientist" />
   <title>ivette colón</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link href="css/all.min.css" rel="stylesheet" />
@@ -15,23 +15,23 @@
 
   <nav class="broadcast-nav">
     <div class="nav-inner">
-      <span class="call-sign">WIVC</span>
+      <span class="call-sign">WIVC 99.9FM</span>
       <div class="dial-display">
-        <span>FM</span>
-        <span class="dial-freq" id="dial-freq">88.3</span>
-        <span>MHz</span>
+        <span class="dial-freq" id="dial-freq">:</span>
       </div>
       <ul class="stations">
-        <li><a href="#about"        data-freq="88.3" data-label="about">88.3</a></li>
-        <li><a href="#research"     data-freq="91.7" data-label="research">91.7</a></li>
-        <li><a href="#publications" data-freq="94.1" data-label="publications">94.1</a></li>
-        <li><a href="#beyond"       data-freq="98.6" data-label="beyond">98.6</a></li>
+        <li><a href="#about"        data-freq="about"        data-label="about">:</a></li>
+        <li><a href="#research"     data-freq="research"     data-label="research">&#x203D;</a></li>
+        <li><a href="#publications" data-freq="publications" data-label="publications">&#x2042;</a></li>
+        <li><a href="#beyond"       data-freq="beyond"       data-label="beyond">&iquest;</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="container">
+  <main>
+  <div class="page-grid">
 
+    <div class="left-col">
     <!-- 88.3 — about -->
     <section id="about" class="hero">
       <div class="hero-grid">
@@ -45,17 +45,16 @@
             <!-- Cognitive &amp; Computational Neuroscience -->
           </p>
           <p class="hero-bio">
-            ((((((((( cognitive neuroscientist and artist ))))))))) 
+            ((( cognitive neuroscientist & artist )))
           </p>
           <p class="hero-bio">
-            Fixin' to complete my PhD with <a href="http://concepts.psych.wisc.edu">Dr. Tim Rogers</a> at UW!
+            fixin' to complete my PhD with <a href="http://concepts.psych.wisc.edu">Dr. Tim Rogers</a> at UW!
           </p>
           <div class="hero-links">
             <a href="mailto:yivettecolon@gmail.com">email</a>
             <a href="https://scholar.google.com/citations?hl=en&authuser=4&user=LSkm1kwAAAAJ">google scholar</a>
-            <a href="https://bsky.app/profile/ivetteco.bsky.social">bluesky</a>
-            <a href="https://github.com/ivettecolon">github</a>
-          </div>
+            <a href="https://bsky.app/profile/ivetteco.bsky.social">bluesky</a>          </div>
+
 <!--           <div class="tags">
             <span class="tag">social cognition</span>
             <span class="tag">face perception</span>
@@ -66,12 +65,14 @@
           </div> -->
         </div>
       </div>
-    </section>
+    </section><!-- /about -->
+    </div><!-- /left-col -->
 
+    <div class="right-col">
     <!-- 91.7 — research -->
     <section id="research">
       <div class="section-marker">
-        <span class="section-freq">91.7 MHz</span>
+        <span class="section-freq">&#x203D;</span>
         <h2 class="section-title">research</h2>
       </div>
 
@@ -79,24 +80,25 @@
 
       <div class="research-list">
         <div class="research-item">
+          <h3>the nature of representations</h3>
+          <p>How do our representations of semantic content accommodate and access the many kinds of information associated with a concept? What are the mathematical principles behind how this is accomplished in the brain and its models? These questions are sorta the main throughline uniting my work, in one way or another.</p>
+        </div>
+        <div class="research-item">
           <h3>mental &amp; neural motifs</h3>
-          <p>Some of my work aims to characterize shared and individual-specific patterns in how people mentally organize semantic content. My current focus is applying behaviorally-derived, idiosyncratic semantic similarity spaces to neural decoding.</p>
+          <p>One line of my work aims to characterize shared and individual-specific patterns in how people organize semantic content in behavior and the brain. My current focus is applying behaviorally-derived, idiosyncratic semantic similarity spaces to neural decoding.</p>
         </div>
         <div class="research-item">
           <h3>social knowledge organization</h3>
-          <p>How is social knowledge structured in mind and brain? I investigate how semantic distance organizes mental representations of social roles and identities, drawing on behavioral data, semantic dementia case studies, and cross-modal conceptual spaces.</p>
+          <p>How is social knowledge structured in our minds? A whole chunk of my work investigates how we organize our representations of social information, particularly about faces.</p>
         </div>
-        <div class="research-item">
-          <h3>the nature of representations</h3>
-          <p>How do our representations of semantic content accommodate and access the many kinds of information associated with a concept? What are the mathematical principles behind how this is accomplished in the brain and its models?</p>
-        </div>
+
       </div>
     </section>
 
     <!-- 94.1 — publications -->
     <section id="publications">
       <div class="section-marker">
-        <span class="section-freq">94.1 MHz</span>
+        <span class="section-freq">&#x2042;</span>
         <h2 class="section-title">publications</h2>
       </div>
 
@@ -168,7 +170,7 @@
     <!-- 98.6 — beyond -->
     <section id="beyond">
       <div class="section-marker">
-        <span class="section-freq">98.6 MHz</span>
+        <span class="section-freq">¿</span>
         <h2 class="section-title">beyond the lab</h2>
       </div>
 
@@ -185,6 +187,8 @@
       </div>
     </section>
 
+    </div><!-- /right-col -->
+  </div><!-- /page-grid -->
   </main>
 
   <footer>
@@ -193,31 +197,30 @@
   </footer>
 
   <script>
-    const sections = document.querySelectorAll('section[id]');
+    const sections = document.querySelectorAll('.right-col section[id]');
     const dialFreq = document.getElementById('dial-freq');
     const stationLinks = document.querySelectorAll('.stations a');
 
-    const freqMap = {
-      about: '88.3',
-      research: '91.7',
-      publications: '94.1',
-      beyond: '98.6'
+    const symbolMap = {
+      research:     '‽',
+      publications: '⁂',
+      beyond:       '¿'
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const id = entry.target.id;
-          const freq = freqMap[id];
-          if (freq && dialFreq.textContent !== freq) {
+          const symbol = symbolMap[id];
+          if (symbol && dialFreq.textContent !== symbol) {
             dialFreq.classList.add('changing');
             setTimeout(() => {
-              dialFreq.textContent = freq;
+              dialFreq.textContent = symbol;
               dialFreq.classList.remove('changing');
             }, 120);
           }
           stationLinks.forEach(a => {
-            a.classList.toggle('active', a.dataset.freq === freq);
+            a.classList.toggle('active', a.dataset.freq === id);
           });
         }
       });

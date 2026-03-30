@@ -129,6 +129,27 @@ a:hover { text-decoration: underline; }
 
 /* ---- LAYOUT ---- */
 
+.page-grid {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 0 5rem;
+  align-items: start;
+}
+
+.left-col {
+  position: sticky;
+  top: 60px;
+}
+
+.right-col {
+  border-left: 1px solid var(--rule);
+  padding-left: 4rem;
+}
+
+/* footer still uses the old single-column width */
 .container {
   max-width: var(--width);
   margin: 0 auto;
@@ -139,7 +160,7 @@ section {
   padding: 4rem 0;
 }
 
-section + section {
+.right-col section + section {
   border-top: 1px solid var(--rule);
 }
 
@@ -187,6 +208,25 @@ section + section {
   width: 100%;
   display: block;
   filter: grayscale(20%);
+}
+
+/* hero in left sidebar: stack photo above text */
+.left-col .hero {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.left-col .hero-grid {
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.left-col .hero-photo img {
+  width: 140px;
+}
+
+.left-col .hero-name {
+  font-size: 1.5rem;
 }
 
 .hero-name {
@@ -256,6 +296,24 @@ section + section {
   padding: 0.15rem 0.45rem;
   border: 1px solid var(--rule);
   border-radius: 2px;
+}
+
+/* ---- NAME SQUARE ---- */
+
+.name-square {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  line-height: 1.6;
+  color: var(--rule);
+  letter-spacing: 0.05em;
+  margin-top: 1.5rem;
+  white-space: pre;
+  user-select: none;
+  transition: color 0.4s;
+}
+
+.name-square:hover {
+  color: var(--dim);
 }
 
 /* ---- RESEARCH ---- */
@@ -419,24 +477,43 @@ footer .signal-off::before {
 
 /* ---- RESPONSIVE ---- */
 
-@media (max-width: 600px) {
-  .hero-grid {
+@media (max-width: 760px) {
+  .page-grid {
     grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+  }
+
+  .left-col {
+    position: static;
+  }
+
+  .left-col .hero {
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
+
+  .left-col .hero-grid {
+    grid-template-columns: 120px 1fr;
     gap: 1.5rem;
+    align-items: start;
   }
 
-  .hero-photo {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .hero-photo img {
-    width: 120px;
+  .left-col .hero-photo img {
+    width: 100%;
     border-radius: 50%;
   }
 
-  .hero-name {
+  .left-col .hero-name {
     font-size: 2rem;
+  }
+
+  .right-col {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .right-col section:first-child {
+    border-top: 1px solid var(--rule);
   }
 
   .nav-inner {
