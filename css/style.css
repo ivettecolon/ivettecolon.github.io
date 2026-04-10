@@ -84,6 +84,7 @@ a:hover { text-decoration: underline; }
 }
 
 .stations {
+  visibility: hidden; /* re-enable when nav links to real pages */
   list-style: none;
   display: flex;
   gap: 1.25rem;
@@ -233,7 +234,10 @@ section {
 }
 
 .left-col .hero-photo img {
-  width: 140px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .left-col .hero-name {
@@ -267,6 +271,19 @@ section {
   line-height: 1.75;
   color: var(--ink);
   margin-bottom: 0.6rem;
+}
+
+.affil-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.6rem 0;
+  font-size: 0.75rem;
+  color: var(--ink);
+}
+
+.affil-list li::before {
+  content: "· ";
+  color: var(--dim);
 }
 
 .hero-links {
