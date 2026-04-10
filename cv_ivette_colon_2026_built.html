@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Y. Ivette Colón – CV</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fira+Mono:wght@400;500&display=swap');
+
+  :root {
+    --text: #111111;
+    --accent: #c4472a;
+    --light: #f8f6f1;
+    --rule: #ccc8c0;
+    --muted: #888;
+    --surface: #fff;
+    --page-width: 780px;
+    --indent: 160px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--text);
+    background: var(--light);
+    padding: 60px 40px 100px;
+  }
+
+  .page { max-width: var(--page-width); margin: 0 auto; }
+
+  header {
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid var(--text);
+  }
+  header h1 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+  header h1 em { font-style: italic; color: var(--accent); }
+  header h1 .name-accent {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    color: var(--accent);
+    font-size: 0.85em;
+    letter-spacing: -0.02em;
+  }
+
+  .header-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px 40px;
+    font-size: 0.92rem;
+    color: var(--muted);
+    font-family: 'Fira Mono', monospace;
+    margin-top: 8px;
+  }
+  .header-meta a { color: var(--accent); text-decoration: none; }
+  .header-meta a:hover { text-decoration: underline; }
+
+  section { margin-bottom: 32px; }
+
+  section h2 {
+    font-size: 0.78rem;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: var(--indent) 1fr;
+    gap: 0 24px;
+    margin-bottom: 8px;
+    align-items: baseline;
+  }
+  .row-date {
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--muted);
+    padding-top: 1px;
+    line-height: 1.55;
+  }
+  .row-content { line-height: 1.55; }
+  .row-content p + p { margin-top: 2px; }
+
+  .detail { font-size: 0.9rem; color: var(--muted); font-style: italic; }
+  .edu-inst { font-size: 0.95rem; color: var(--muted); margin-top: 1px; }
+
+  .star::before { content: "★ "; color: var(--accent); font-size: 0.75rem; vertical-align: middle; }
+
+  .pub-entry {
+    display: grid;
+    grid-template-columns: var(--indent) 1fr;
+    gap: 0 24px;
+    margin-bottom: 14px;
+    align-items: baseline;
+  }
+  .pub-entry .pub-year {
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .pub-entry .pub-text { font-size: 0.96rem; line-height: 1.6; }
+  .pub-entry .pub-text em { font-style: italic; }
+  .pub-note { display: block; font-size: 0.84rem; color: var(--accent); margin-top: 2px; }
+  .pub-note.star::before { content: "★ "; }
+
+  .cite-title { display: block; }
+  .cite-meta { display: block; font-size: 0.88rem; color: var(--muted); margin-top: 1px; }
+
+  .sub-head {
+    font-size: 0.78rem;
+    font-family: 'Fira Mono', monospace;
+    font-style: normal;
+    color: var(--muted);
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .inline-block { margin-bottom: 8px; }
+  .inline-block strong {
+    font-weight: 500;
+    font-family: 'Fira Mono', monospace;
+    display: block;
+    color: var(--muted);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    margin-top: 12px;
+  }
+
+  .service-item {
+    margin-bottom: 2px;
+    line-height: 1.5;
+  }
+
+  @media print {
+    body { background: white; padding: 0; font-size: 12px; }
+    .page { max-width: 100%; }
+  }
+  @media (max-width: 620px) {
+    :root { --indent: 80px; }
+    body { padding: 30px 20px 60px; }
+    header h1 { font-size: 2rem; }
+    .header-meta { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <h1>Y. <span class="name-accent">Ivette</span> Colón</h1>
+  <p style="font-size:1rem; color:var(--muted); margin-bottom:8px;">Advanced Opportunity Doctoral Research Fellow · University of Wisconsin-Madison</p>
+  <div class="header-meta">
+    <span>📧 <a href="mailto:yivettecolon@gmail.com">yivettecolon@gmail.com</a></span>
+    <span>🌐 <a href="https://ivettecolon.github.io" target="_blank">ivettecolon.github.io</a></span>
+    <span>📍 Madison, WI, United States of America</span>
+    <span>📞 1-214-235-9861</span>
+  </div>
+</header>
+
+
+<section>
+  <h2>Appointments</h2>
+
+  <div class="row">
+    <span class="row-date">2020–2026</span>
+    <div class="row-content"><strong>Advanced Opportunity Doctoral Research Fellow</strong><p class="edu-inst">University of Wisconsin-Madison, Madison WI</p><p class="detail">Supervisor: Dr. Timothy Rogers</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2026—</span>
+    <div class="row-content"><strong>Incoming Postdoctoral Fellow</strong><p class="edu-inst">McGill University, Montreal QC</p><p class="detail">Supervisor: Dr. Jelena Ristic</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+
+  <div class="row">
+    <span class="row-date">2020–2026</span>
+    <div class="row-content"><strong>Doctor of Philosophy, Cognition and Cognitive Neuroscience</strong><p class="edu-inst">University of Wisconsin-Madison, Madison WI</p><p class="detail">Dissertation: Finding mental and neural motifs of faces places and objects</p><p class="detail">Advisor: Dr. Timothy Rogers</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2020–2021</span>
+    <div class="row-content"><strong>Master of Science, Cognition and Cognitive Neuroscience</strong><p class="edu-inst">University of Wisconsin-Madison, Madison WI</p><p class="detail">Thesis: Forgetting a face: attribute amnesia for familiar identities</p><p class="detail">Advisors: Dr. Timothy Rogers; Dr. Emily Ward</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2013–2017</span>
+    <div class="row-content"><strong>Bachelor of Science, Cognitive Science, minor in Computer Science</strong><p class="edu-inst">University of Texas at Dallas, Dallas TX</p><p class="detail">Thesis: Facial expression is retained in deep networks trained for face identification</p><p class="detail">Advisor: Dr. Alice O&#x27;Toole</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Research Experience</h2>
+
+  <div class="row">
+    <span class="row-date">2018–2020</span>
+    <div class="row-content">Research Specialist, Face Perception Lab<p class="edu-inst">University of Texas at Dallas</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2016–2018</span>
+    <div class="row-content">Research Assistant, Face Perception Lab<p class="edu-inst">University of Texas at Dallas</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2015–2016</span>
+    <div class="row-content">Research Assistant, Lexical Ambiguity Lab<p class="edu-inst">University of Texas at Dallas</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Grants, Honors, &amp; Awards</h2>
+
+  <div class="row">
+    <span class="row-date">2026</span>
+    <div class="row-content"><span>Flag Bearer – PhD Graduation, University of Wisconsin-Madison</span><p class="detail">Distinction</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2026</span>
+    <div class="row-content"><span class="star">Canada Impact+ Research Training Award, McGill University</span><p class="detail">Fellowship</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2026</span>
+    <div class="row-content"><span>Graduate Student Travel Award, Cognitive Neuroscience Society</span><p class="detail">Prize/Award · $100.00</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2026</span>
+    <div class="row-content"><span>Early Career Scientist Travel Grant, National Eye Institute</span><p class="detail">Prize/Award · $1000.00</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2026</span>
+    <div class="row-content"><span>Walsh Travel Award, McPherson Eye Research Institute / UW-Madison</span><p class="detail">Prize/Award · $1500.00</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2025</span>
+    <div class="row-content"><span class="star">Kenzi Valentyn Vision Research Award, McPherson Eye Research Institute</span><p class="detail">Principal Applicant: Decoding the neural organization of visual concepts through controlled computational models · $7500.00</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2025</span>
+    <div class="row-content"><span class="star">Graduate Student Award, Cognitive Science Society</span><p class="detail">Prize/Award · $1000.00</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2025</span>
+    <div class="row-content"><span>Distinguished Service Award, University of Wisconsin-Madison</span><p class="detail">Prize/Award · $1000.00</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2023</span>
+    <div class="row-content"><span>Hertz Travel Award, University of Wisconsin-Madison</span><p class="detail">Prize/Award · $1000.00</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2020</span>
+    <div class="row-content"><span>Mamie and Kenneth Clark Award, University of Wisconsin-Madison</span><p class="detail">Prize/Award · $2500.00</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2020</span>
+    <div class="row-content"><span class="star">LUCID Trainee Fellowship, National Science Foundation</span><p class="detail">Fellowship</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2020</span>
+    <div class="row-content"><span class="star">Advanced Opportunity Fellowship, University of Wisconsin-Madison</span><p class="detail">Fellowship</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Publications</h2>
+
+  <p class="sub-head">Journal Articles</p>
+
+  <div class="pub-entry">
+    <span class="pub-year">2026</span>
+    <div class="pub-text"><span class="cite-title">Finding mental and neural motifs for faces places and objects</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Fulvio J.; Postle B.; Rogers T. T. (2026), <em>in prep.</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2024</span>
+    <div class="pub-text"><span class="cite-title">Uniting theory and data: the promise and challenge of creating an honest model of facial expression</span><span class="cite-meta">Wohltjen S.; <strong>Colón Y. I.</strong>; Zhu Z.; Miller K.; Huang W.-C.; Mutlu B.; Li Y.; Niedenthal P. M. (2024), <em>Cognition and Emotion</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2021</span>
+    <div class="pub-text"><span class="cite-title">Facial expression is retained in deep networks trained for face identification</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Castillo C. D.; O&#x27;Toole A. J. (2021), <em>Journal of Vision 21(4)</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2021</span>
+    <div class="pub-text"><span class="cite-title">Seeing through disguise: Getting to know you with a deep convolutional neural network</span><span class="cite-meta">Noyes E.; Parde C. J.; <strong>Colón Y. I.</strong>; Hill M. Q.; Castillo C. D.; Jenkins R.; O&#x27;Toole A. J. (2021), <em>Cognition 211</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2021</span>
+    <div class="pub-text"><span class="cite-title">Single unit status in deep convolutional neural network codes for face identification: sparseness redefined</span><span class="cite-meta">Parde C. J.; <strong>Colón Y. I.</strong>; Hill M. Q.; Castillo C. D.; Dhar P.; O&#x27;Toole A. J. (2021), <em>Journal of Vision 21(8)</em>.</span></div>
+  </div>
+  <p class="sub-head">Peer-Reviewed Conference Papers &amp; Proceedings</p>
+
+  <div class="pub-entry">
+    <span class="pub-year">2026</span>
+    <div class="pub-text"><span class="cite-title">Idiosyncratic codes in distributed minds</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Rogers T. T. (2026), <em>Proceedings of the Cognitive Science Society 2026</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2025</span>
+    <div class="pub-text"><span class="cite-title">Development of the NBT-53 Texture Library for the Study of Texture Semantics</span><span class="cite-meta">Chinni A.; <strong>Colón Y. I.</strong>; Mukherjee K.; Gleicher M. L.; Schloss K. B. (2025), <em>Vision Sciences Society (pp. 2545-2545)</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2025</span>
+    <div class="pub-text"><span class="cite-title">Finding motifs in mental representations of faces, places and, objects</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Rogers T. T. (2025), <em>Proceedings of the Cognitive Science Society (pp. 5491-5497)</em>.<span class="pub-note star">Graduate Student Award</span></span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2025</span>
+    <div class="pub-text"><span class="cite-title">Iterated LASSO reveals highly distributed and variable representations of faces places and objects</span><span class="cite-meta">Li Z.; <strong>Colón Y. I.</strong>; Mukherjee K.; Rogers T. T. (2025), <em>Cognitive Science Society (pp. 6647-6647)</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2024</span>
+    <div class="pub-text"><span class="cite-title">Semantic distance organizes social knowledge: Insights from semantic dementia and cross-modal conceptual space</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Rouse, M.; Lambon Ralph, M.; Rogers, T. T. (2024), <em>Cognitive Science Society (pp. 2840-2846)</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2023</span>
+    <div class="pub-text"><span class="cite-title">Yours and Ours: Individual and Group Differences in Semantic Organization from Triplet Judgements of Faces</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Rogers T. T. (2023), <em>Cognitive Science Society (pp. 3997-3997)</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2022</span>
+    <div class="pub-text"><span class="cite-title">Forgetting a face: Attribute amnesia for familiar identities</span><span class="cite-meta"><strong>Colón Y. I.</strong> (2022), <em>Vision Sciences Society (pp. 4446-4446)</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2021</span>
+    <div class="pub-text"><span class="cite-title">To Each Their Own: Measuring Familiarity for Face Images</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Ward, E. J. (2021), <em>Vision Sciences Society (pp. 2229-2229)</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2020</span>
+    <div class="pub-text"><span class="cite-title">Facial Expression Information in Humans and DCNNs</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Castillo C. D.; O&#x27;Toole A. J. (2020), <em>Vision Sciences Society (pp. 600-600)</em>.</span></div>
+  </div>
+  <div class="pub-entry">
+    <span class="pub-year">2020</span>
+    <div class="pub-text"><span class="cite-title">Integrating Single-Unit and Pattern Codes in DCNNs Trained for Face Identification</span><span class="cite-meta">Parde C. J.; <strong>Colón Y. I.</strong>; Hill M. Q.; Castillo C. D.; O&#x27;Toole A. J. (2020), <em>Vision Sciences Society (pp. 1462-1462)</em>.</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Invited Talks &amp; Seminars</h2>
+
+  <div class="row">
+    <span class="row-date">2026</span>
+    <div class="row-content"><span class="cite-title">Idiosyncratic mental and neural motifs for faces places and objects</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>BLRB Research Group – University of Chicago, Chicago IL</em>.</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2026</span>
+    <div class="row-content"><span class="cite-title">Neural representations of faces are widely distributed and highly individualized</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Rogers T. T., <em>Cognitive Neuroscience Society, Vancouver BC</em>.</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2025</span>
+    <div class="row-content"><span class="cite-title">Neural representations of faces are widely distributed and highly individualized</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>Different Minds Collaborative, Victoria BC</em>.</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2025</span>
+    <div class="row-content"><span class="cite-title">Finding mental and neural motifs for faces</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>Social Cognitive and Neural Sciences Lab – Columbia University, New York NY</em>.</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2024</span>
+    <div class="row-content"><span class="cite-title">Computational models for developmental cognition</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>Cognition &amp; Cognitive Neuroscience Proseminar – UW-Madison, Madison WI</em>.</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2023</span>
+    <div class="row-content"><span class="cite-title">Social roles in the mind: a word-picture matching study</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>MRC Cognition and Brain Sciences Unit – University of Cambridge, Cambridge UK</em>.</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2023</span>
+    <div class="row-content"><span class="cite-title">Social roles in the mind: a word-picture matching study</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>Niedenthal Emotions Lab – UW-Madison, Madison WI</em>.</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2022</span>
+    <div class="row-content"><span class="cite-title">Forgetting a face: attribute amnesia for familiar identities</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>Niedenthal Emotions Lab – UW-Madison, Madison WI</em>.</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2021</span>
+    <div class="row-content"><span class="cite-title">Measuring familiarity for face images (and why we don&#x27;t align)</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>O&#x27;Toole Perception Lab – UT Dallas, Dallas TX</em>.</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2020</span>
+    <div class="row-content"><span class="cite-title">Who is more familiar?</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Ward, E. J., <em>O&#x27;Toole Perception Lab – UT Dallas, Dallas TX</em>.</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2019</span>
+    <div class="row-content"><span class="cite-title">Guest lecture in Introduction to Cognitive Science: Deep Convolutional Neural Networks</span><span class="cite-meta"><em>University of Texas at Dallas, Dallas TX</em>.</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Conference Presentations</h2>
+
+  <div class="row">
+    <span class="row-date">2026</span>
+    <div class="row-content"><span class="cite-title">Neural representations of faces are widely distributed and highly individualized</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Rogers T. T., <em>Cognitive Neuroscience Society, Vancouver CA</em>. [Poster]<span class="pub-note star">Graduate Student Award awarded</span></span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2025</span>
+    <div class="row-content"><span class="cite-title">Iterated LASSO reveals highly distributed and variable representations of faces, places, and objects</span><span class="cite-meta">Li Z.; <strong>Colón Y. I.</strong>; Mukherjee K.; Rogers T. T., <em>Cognitive Science Society, San Francisco CA</em>. [Poster]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2025</span>
+    <div class="row-content"><span class="cite-title">Semantic distance organizes social knowledge</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>UW-Madison Psychology Research Fair, Madison WI</em>. [Poster]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2024</span>
+    <div class="row-content"><span class="cite-title">A bottom-up approach to finding individual differences in mental representation</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>Cognitive Neuroscience Society, Toronto ON</em>. [Poster]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2024</span>
+    <div class="row-content"><span class="cite-title">Patterns of social-knowledge impairment in semantic dementia</span><span class="cite-meta">Peplinski C. (mentored), <em>Cognitive Neuroscience Society, Toronto ON</em>. [Mentored student presenter]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2024</span>
+    <div class="row-content"><span class="cite-title">Semantic distance organizes social knowledge</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Rouse, M.; Lambon Ralph, M.; Rogers, T. T., <em>Cognitive Science Society, Rotterdam NL</em>. [Talk]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2023</span>
+    <div class="row-content"><span class="cite-title">Vibe check: identifying misinformation through sentiment analyses</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Cunningham E.; Chuang S., <em>AI + Society Research Symposium, Madison WI</em>. [Talk]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2023</span>
+    <div class="row-content"><span class="cite-title">Yours and Ours: Individual and Group Differences in Semantic Organization from Triplet Judgements of Faces</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Rogers T. T., <em>Cognitive Science Society, Sydney AU</em>. [Poster]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2023</span>
+    <div class="row-content"><span class="cite-title">Faces in the Wild: Clustering Facial Expressions Using Face Movement Trajectories</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Wohltjen, S., Niedenthal, P., <em>Society for Personality and Social Psychology, Atlanta GA</em>. [Poster]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2023</span>
+    <div class="row-content"><span class="cite-title">Yours and Ours: Individual and group differences in conceptual organization</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Rogers T. T., <em>Wisconsin Institute for Discovery Symposium, Madison WI</em>. [Poster]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2022</span>
+    <div class="row-content"><span class="cite-title">Forgetting a face: attribute amnesia for familiar identities</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>Different Minds Collaborative, Victoria BC</em>. [Poster]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2022</span>
+    <div class="row-content"><span class="cite-title">Forgetting a face: attribute amnesia for familiar identities</span><span class="cite-meta"><strong>Colón Y. I.</strong>; Ward, E. J., <em>Vision Sciences Society, St. Pete Beach FL</em>. [Poster]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2021</span>
+    <div class="row-content"><span class="cite-title">To each their own: measuring familiarity for face images</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>Vision Sciences Society, St. Petersburg FL</em>. [Poster]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2020</span>
+    <div class="row-content"><span class="cite-title">Facial expression information in humans and DCNNs</span><span class="cite-meta"><strong>Colón Y. I.</strong>, <em>Vision Sciences Society</em>. [Poster]</span></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2020</span>
+    <div class="row-content"><span class="cite-title">Integrating single-unit and pattern codes in DCNNs trained for face identification</span><span class="cite-meta">Parde C. J.; <strong>Colón Y. I.</strong> et al., <em>Vision Sciences Society</em>. [Poster]</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Teaching</h2>
+
+  <p class="sub-head">University of Wisconsin–Madison</p>
+
+  <div class="row">
+    <span class="row-date">2022–2023</span>
+    <div class="row-content">Psych 610 &amp; Psych 710: Graduate Statistics for Psychology<p class="detail">Teaching Assistant and Lab Instructor</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Advising</h2>
+
+  <p class="sub-head">Bachelor's Honours Students</p>
+
+  <div class="row">
+    <span class="row-date">current</span>
+    <div class="row-content">Heidi Grijnsztein, Zain Ashraf, Erin McQuillan, Lina Park, Jack Esser, Michelle Ren</div>
+  </div>
+  <div class="row">
+    <span class="row-date">completed</span>
+    <div class="row-content">Yulin Tong, Claire Peplinski</div>
+  </div>
+</section>
+
+<section>
+  <h2>Workshops &amp; Outreach</h2>
+
+  <div class="row">
+    <span class="row-date">2024–</span>
+    <div class="row-content">Introduction to JsPsych and DataPipe: Hosting your experiments for free<p class="detail">Developer and Instructor, University of Wisconsin-Madison</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2024–</span>
+    <div class="row-content">Triadic Comparison Methods Workshop<p class="detail">Developer and Instructor, University of Wisconsin-Madison</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2022</span>
+    <div class="row-content">Introduction to JsPsych for Psychology Research Experience Program<p class="detail">Developer and Instructor, University of Wisconsin-Madison</p></div>
+  </div>
+  <div class="row">
+    <span class="row-date">2021–</span>
+    <div class="row-content">Queery: LGBTQ+ News and Information Talk Show<p class="detail">Producer and host, WORT 89.9 FM</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Professional Service</h2>
+
+  <div class="inline-block">
+    <strong>Ad Hoc Reviewing</strong>
+    Scientific Reports, Cognitive Computation, Cognitive Sciences Society Conference, Computational Brain and Behavior, Journal of Vision, i-Perception, Nature Machine Intelligence
+  </div>
+  <div class="inline-block">
+    <strong>Departmental Service</strong>
+    <p class="service-item">Graduate Student Representative <span class="detail">(2023–2024)</span></p><p class="service-item">Graduate Handbook Consultant <span class="detail">(2023)</span></p><p class="service-item">Visiting Speaker Student Host <span class="detail">(2023)</span></p><p class="service-item">Prospective Student Visiting Day Host <span class="detail">(2022–2024)</span></p><p class="service-item">DEI Visiting Day Panelist <span class="detail">(2022–2024)</span></p><p class="service-item">Incoming Student Buddy <span class="detail">(2022)</span></p><p class="service-item">Communications Committee Member <span class="detail">(2021–2022)</span></p><p class="service-item">Psychology Colloquium Committee Member <span class="detail">(2020–2023)</span></p><p class="service-item">Diversity Equity and Inclusion Committee Member <span class="detail">(2020–2022)</span></p><p class="service-item">Delta Research Mentorship Training Curriculum Contributor</p>
+  </div>
+  <div class="inline-block">
+    <strong>Other</strong>
+    <p class="service-item">Cognitive Neuroscience Society Conference Volunteer <span class="detail">(2026)</span></p><p class="service-item">COMAP Competition Judge <span class="detail">(2023–2026)</span></p>
+  </div>
+</section>
+
+
+<p style="margin-top:48px; font-size:0.78rem; font-family:'Fira Mono',monospace; color:var(--rule); border-top:1px solid var(--rule); padding-top:12px;">Last updated: April 2026 · <a href="https://ivettecolon.github.io" style="color:var(--rule);">ivettecolon.github.io</a></p>
+
+</div>
+</body>
+</html>

@@ -310,6 +310,17 @@ section {
   text-decoration: none;
 }
 
+.hero-links a.cv-link {
+  color: var(--signal);
+  border-color: var(--signal);
+  font-weight: 700;
+}
+
+.hero-links a.cv-link:hover {
+  background: var(--signal);
+  color: var(--surface);
+}
+
 .hero-ascii {
   margin-top: 1.5rem;
   font-family: var(--mono);
