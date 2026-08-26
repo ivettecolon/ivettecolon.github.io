@@ -5,159 +5,231 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Y. Ivette Colón – CV</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fira+Mono:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,400;0,700;1,400&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
   :root {
-    --text: #111111;
+    --text: #1a1a1a;
+    --body: #3d3a35;
     --accent: #c4472a;
     --light: #f8f6f1;
-    --rule: #ccc8c0;
-    --muted: #888;
+    --rule: #e2ded5;
+    --muted: #7d786f;
     --surface: #fff;
-    --page-width: 780px;
-    --indent: 160px;
+    --page-width: 820px;
+    --indent: 150px;
+    --sans: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', system-ui, sans-serif;
+    --mono: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+  html { -webkit-text-size-adjust: 100%; }
+
   body {
-    font-family: 'EB Garamond', Georgia, serif;
+    font-family: var(--sans);
     font-size: 16px;
-    line-height: 1.55;
-    color: var(--text);
+    line-height: 1.6;
+    color: var(--body);
     background: var(--light);
-    padding: 60px 40px 100px;
+    padding: 72px 40px 96px;
+    -webkit-font-smoothing: antialiased;
   }
 
   .page { max-width: var(--page-width); margin: 0 auto; }
 
+  a { color: var(--accent); text-decoration: none; text-underline-offset: 2px; }
+  a:hover { text-decoration: underline; }
+
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---- HEADER ---- */
+
   header {
-    margin-bottom: 36px;
-    padding-bottom: 24px;
-    border-bottom: 2px solid var(--text);
-  }
-  header h1 {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 2.6rem;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    line-height: 1.1;
-    margin-bottom: 10px;
-  }
-  header h1 em { font-style: italic; color: var(--accent); }
-  header h1 .name-accent {
-    font-family: 'Space Mono', monospace;
-    font-style: normal;
-    color: var(--accent);
-    font-size: 0.85em;
-    letter-spacing: -0.02em;
-  }
-
-  .header-meta {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px 40px;
-    font-size: 0.92rem;
-    color: var(--muted);
-    font-family: 'Fira Mono', monospace;
-    margin-top: 8px;
-  }
-  .header-meta a { color: var(--accent); text-decoration: none; }
-  .header-meta a:hover { text-decoration: underline; }
-
-  section { margin-bottom: 32px; }
-
-  section h2 {
-    font-size: 0.78rem;
-    font-family: 'Fira Mono', monospace;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 10px;
-    padding-bottom: 4px;
+    margin-bottom: 44px;
+    padding-bottom: 20px;
     border-bottom: 1px solid var(--rule);
   }
 
-  .row {
+  header h1 {
+    font-family: var(--sans);
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  header h1 em { font-style: italic; color: var(--accent); }
+
+  .header-role {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .header-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-family: var(--mono);
+  }
+
+  /* ---- SECTIONS ---- */
+
+  section { margin-bottom: 40px; }
+
+  section h2 {
+    font-size: 0.7rem;
+    font-family: var(--mono);
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .row, .pub-entry {
     display: grid;
     grid-template-columns: var(--indent) 1fr;
-    gap: 0 24px;
-    margin-bottom: 8px;
+    gap: 0 28px;
+    margin-bottom: 16px;
     align-items: baseline;
   }
-  .row-date {
-    font-family: 'Fira Mono', monospace;
-    font-size: 0.82rem;
+
+  .row:last-child, .pub-entry:last-child { margin-bottom: 0; }
+
+  .row-date, .pub-entry .pub-year {
+    font-family: var(--mono);
+    font-size: 0.76rem;
     color: var(--muted);
-    padding-top: 1px;
-    line-height: 1.55;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
   }
-  .row-content { line-height: 1.55; }
-  .row-content p + p { margin-top: 2px; }
 
-  .detail { font-size: 0.9rem; color: var(--muted); font-style: italic; }
-  .edu-inst { font-size: 0.95rem; color: var(--muted); margin-top: 1px; }
-
-  .star::before { content: "★ "; color: var(--accent); font-size: 0.75rem; vertical-align: middle; }
-
-  .pub-entry {
-    display: grid;
-    grid-template-columns: var(--indent) 1fr;
-    gap: 0 24px;
-    margin-bottom: 14px;
-    align-items: baseline;
+  .row-content { line-height: 1.6; max-width: 62ch; }
+  .row-content > strong,
+  .row-content > span:not(.cite-meta) {
+    font-weight: 700;
+    color: var(--text);
   }
-  .pub-entry .pub-year {
-    font-family: 'Fira Mono', monospace;
-    font-size: 0.82rem;
-    color: var(--muted);
-    line-height: 1.6;
-  }
-  .pub-entry .pub-text { font-size: 0.96rem; line-height: 1.6; }
-  .pub-entry .pub-text em { font-style: italic; }
-  .pub-note { display: block; font-size: 0.84rem; color: var(--accent); margin-top: 2px; }
-  .pub-note.star::before { content: "★ "; }
+  .row-content p + p { margin-top: 1px; }
 
-  .cite-title { display: block; }
-  .cite-meta { display: block; font-size: 0.88rem; color: var(--muted); margin-top: 1px; }
+  .detail { font-size: 0.84rem; color: var(--muted); font-style: normal; }
+  .edu-inst { font-size: 0.88rem; color: var(--body); margin-top: 1px; }
+
+  .star::before {
+    content: "\2605\00a0";
+    color: var(--accent);
+    font-size: 0.7rem;
+    vertical-align: 1px;
+  }
+
+  /* ---- PUBLICATIONS ---- */
+
+  .pub-entry .pub-text { font-size: 0.92rem; line-height: 1.6; max-width: 62ch; }
+  .cite-title {
+    display: block;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 2px;
+  }
+  .cite-meta { display: block; font-size: 0.85rem; color: var(--muted); }
+  .cite-meta strong { color: var(--body); font-weight: 700; }
+  .cite-meta em { font-style: italic; }
+
+  .pub-note {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    margin-top: 3px;
+  }
+  .pub-note.star::before { content: "\2605\00a0"; }
 
   .sub-head {
-    font-size: 0.78rem;
-    font-family: 'Fira Mono', monospace;
-    font-style: normal;
-    color: var(--muted);
-    margin-top: 16px;
-    margin-bottom: 8px;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--body);
+    margin: 26px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
   }
 
-  .inline-block { margin-bottom: 8px; }
+  .sub-head:first-of-type { margin-top: 0; }
+
+  /* ---- SERVICE ---- */
+
+  .inline-block {
+    display: grid;
+    grid-template-columns: var(--indent) 1fr;
+    gap: 0 28px;
+    margin-bottom: 16px;
+    align-items: baseline;
+    max-width: none;
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
   .inline-block strong {
-    font-weight: 500;
-    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-family: var(--mono);
     display: block;
     color: var(--muted);
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 3px;
-    margin-top: 12px;
+    text-transform: none;
+    margin: 0;
   }
 
-  .service-item {
-    margin-bottom: 2px;
-    line-height: 1.5;
+  .service-body { line-height: 1.6; max-width: 62ch; }
+  .service-item { margin-bottom: 1px; line-height: 1.55; }
+  .service-item .detail { font-family: var(--mono); font-size: 0.76rem; }
+
+  .cv-footer {
+    margin-top: 56px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--muted);
   }
+  .cv-footer a { color: var(--muted); }
+  .cv-footer a:hover { color: var(--accent); }
+
+  /* ---- PRINT ---- */
 
   @media print {
-    body { background: white; padding: 0; font-size: 12px; }
+    body { background: #fff; padding: 0; font-size: 11.5px; }
     .page { max-width: 100%; }
+    section { margin-bottom: 22px; page-break-inside: auto; }
+    .row, .pub-entry, .inline-block { page-break-inside: avoid; margin-bottom: 9px; }
+    section h2 { page-break-after: avoid; }
+    .sub-head { page-break-after: avoid; }
+    header { page-break-after: avoid; }
+    a { color: var(--text); text-decoration: none; }
   }
-  @media (max-width: 620px) {
-    :root { --indent: 80px; }
-    body { padding: 30px 20px 60px; }
-    header h1 { font-size: 2rem; }
-    .header-meta { grid-template-columns: 1fr; }
+
+  @media (max-width: 680px) {
+    :root { --indent: 1fr; }
+    body { padding: 36px 20px 64px; }
+    header h1 { font-size: 1.7rem; }
+    .header-meta { flex-direction: column; gap: 4px; }
+    .row, .pub-entry, .inline-block {
+      grid-template-columns: 1fr;
+      gap: 2px;
+      margin-bottom: 18px;
+    }
+    .row-date, .pub-entry .pub-year { font-size: 0.72rem; }
+    .inline-block strong { margin-bottom: 4px; }
   }
 </style>
 </head>
@@ -165,13 +237,12 @@
 <div class="page">
 
 <header>
-  <h1>Y. <span class="name-accent">Ivette</span> Colón</h1>
-  <p style="font-size:1rem; color:var(--muted); margin-bottom:8px;">Advanced Opportunity Doctoral Research Fellow · University of Wisconsin-Madison</p>
+  <h1>Dr. Ivette Colón</h1>
+  <p class="header-role">Postdoctoral Researcher</p>
   <div class="header-meta">
-    <span>📧 <a href="mailto:yivettecolon@gmail.com">yivettecolon@gmail.com</a></span>
-    <span>🌐 <a href="https://ivettecolon.github.io" target="_blank">ivettecolon.github.io</a></span>
-    <span>📍 Madison, WI, United States of America</span>
-    
+    <span><a href="mailto:yivettecolon@gmail.com">yivettecolon@gmail.com</a></span>
+    <span><a href="https://ivettecolon.org" target="_blank" rel="noopener">ivettecolon.org</a></span>
+    <span>Madison, WI</span>
   </div>
 </header>
 
@@ -511,20 +582,30 @@
 
   <div class="inline-block">
     <strong>Ad Hoc Reviewing</strong>
-    Scientific Reports, Cognitive Computation, Cognitive Sciences Society Conference, Computational Brain and Behavior, Journal of Vision, i-Perception, Nature Machine Intelligence
+    <div class="service-body">Scientific Reports, Cognitive Computation, Cognitive Sciences Society Conference, Computational Brain and Behavior, Journal of Vision, i-Perception, Nature Machine Intelligence</div>
   </div>
   <div class="inline-block">
     <strong>Departmental Service</strong>
-    <p class="service-item">Graduate Student Representative <span class="detail">(2023–2024)</span></p><p class="service-item">Graduate Handbook Consultant <span class="detail">(2023)</span></p><p class="service-item">Visiting Speaker Student Host <span class="detail">(2023)</span></p><p class="service-item">Prospective Student Visiting Day Host <span class="detail">(2022–2024)</span></p><p class="service-item">DEI Visiting Day Panelist <span class="detail">(2022–2024)</span></p><p class="service-item">Incoming Student Buddy <span class="detail">(2022)</span></p><p class="service-item">Communications Committee Member <span class="detail">(2021–2022)</span></p><p class="service-item">Psychology Colloquium Committee Member <span class="detail">(2020–2023)</span></p><p class="service-item">Diversity Equity and Inclusion Committee Member <span class="detail">(2020–2022)</span></p><p class="service-item">Delta Research Mentorship Training Curriculum Contributor</p>
+    <div class="service-body"><p class="service-item">Graduate Student Representative <span class="detail">(2023–2024)</span></p>
+      <p class="service-item">Graduate Handbook Consultant <span class="detail">(2023)</span></p>
+      <p class="service-item">Visiting Speaker Student Host <span class="detail">(2023)</span></p>
+      <p class="service-item">Prospective Student Visiting Day Host <span class="detail">(2022–2024)</span></p>
+      <p class="service-item">DEI Visiting Day Panelist <span class="detail">(2022–2024)</span></p>
+      <p class="service-item">Incoming Student Buddy <span class="detail">(2022)</span></p>
+      <p class="service-item">Communications Committee Member <span class="detail">(2021–2022)</span></p>
+      <p class="service-item">Psychology Colloquium Committee Member <span class="detail">(2020–2023)</span></p>
+      <p class="service-item">Diversity Equity and Inclusion Committee Member <span class="detail">(2020–2022)</span></p>
+      <p class="service-item">Delta Research Mentorship Training Curriculum Contributor</p></div>
   </div>
   <div class="inline-block">
     <strong>Other</strong>
-    <p class="service-item">Cognitive Neuroscience Society Conference Volunteer <span class="detail">(2026)</span></p><p class="service-item">COMAP Competition Judge <span class="detail">(2023–2026)</span></p>
+    <div class="service-body"><p class="service-item">Cognitive Neuroscience Society Conference Volunteer <span class="detail">(2026)</span></p>
+      <p class="service-item">COMAP Competition Judge <span class="detail">(2023–2026)</span></p></div>
   </div>
 </section>
 
 
-<p style="margin-top:48px; font-size:0.78rem; font-family:'Fira Mono',monospace; color:var(--rule); border-top:1px solid var(--rule); padding-top:12px;">Last updated: April 2026 · <a href="https://ivettecolon.github.io" style="color:var(--rule);">ivettecolon.github.io</a></p>
+<p class="cv-footer">Last updated: April 2026 · <a href="https://ivettecolon.github.io">ivettecolon.github.io</a></p>
 
 </div>
 </body>
