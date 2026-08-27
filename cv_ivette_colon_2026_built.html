@@ -117,16 +117,17 @@
   .row-content { line-height: 1.6; max-width: 62ch; }
   .row-content > strong,
   .row-content > span:not(.cite-meta) {
+    font-weight: 400;
+    color: var(--body);
+  }
+
+  /* Appointments & Education keep bold titles */
+  .cv-bold .row-content > strong,
+  .cv-bold .row-content > span:not(.cite-meta) {
     font-weight: 700;
     color: var(--text);
   }
   .row-content p + p { margin-top: 1px; }
-
-  .awards .row-content > strong,
-  .awards .row-content > span:not(.cite-meta) {
-    font-weight: 400;
-    color: var(--body);
-  }
 
   .detail { font-size: 0.84rem; color: var(--muted); font-style: normal; }
   .edu-inst { font-size: 0.88rem; color: var(--body); margin-top: 1px; }
@@ -143,8 +144,8 @@
   .pub-entry .pub-text { font-size: 0.92rem; line-height: 1.6; max-width: 62ch; }
   .cite-title {
     display: block;
-    font-weight: 700;
-    color: var(--text);
+    font-weight: 400;
+    color: var(--body);
     margin-bottom: 2px;
   }
   .cite-meta { display: block; font-size: 0.85rem; color: var(--muted); }
@@ -253,7 +254,7 @@
 </header>
 
 
-<section>
+<section class="cv-bold">
   <h2>Appointments</h2>
 
   <div class="row">
@@ -267,7 +268,7 @@
   </div>
 </section>
 
-<section>
+<section class="cv-bold">
   <h2>Education</h2>
 
   <div class="row">
@@ -301,7 +302,7 @@
   </div>
 </section>
 
-<section class="awards">
+<section>
   <h2>Grants, Honors, &amp; Awards</h2>
   <div class="row">
     <span class="row-date">2026</span>
